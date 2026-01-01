@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyeri Punggung: Solusi Akupunktur oleh Dr. Hendrik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #1a5276, #2e86c1);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #aed6f1;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .article-header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        
+        .article-header h2 {
+            color: #1a5276;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #5d6d7e;
+            font-style: italic;
+        }
+        
+        .author i {
+            color: #2e86c1;
+        }
+        
+        /* Image Styles */
+        .article-image {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .article-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .article-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+        .dual-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .dual-images {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Content Sections */
+        h3 {
+            color: #1a5276;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #d6dbdf;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #ebf5fb;
+            padding: 20px;
+            border-left: 4px solid #2e86c1;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #2c3e50;
+            padding: 15px;
+            background-color: #fef9e7;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #f1c40f;
+        }
+        
+        /* Sidebar */
+        aside {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-section h3 {
+            font-size: 1.3rem;
+            color: #1a5276;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sidebar-section h3 i {
+            color: #2e86c1;
+        }
+        
+        .info-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 3px solid #2e86c1;
+        }
+        
+        .info-box h4 {
+            color: #1a5276;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .contact-info i {
+            color: #2e86c1;
+            width: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a5276;
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+        
+        .profile-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #2e86c1;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .profile-link:hover {
+            background-color: #1b4f72;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .copyright {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .disclaimer {
+            background-color: #fef5e7;
+            color: #7d6608;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            border-left: 4px solid #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Klinik Akupunktur dr. Hendrik</h1>
+                        <p>Spesialis Nyeri Pinggang & Kebas Saraf</p>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <p><i class="fas fa-phone-alt"></i> Konsultasi: 0852-7041-0537</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Article Content -->
+            <article>
+                <div class="article-header">
+                    <h2>Nyeri Punggung: Masalah Umum dengan Solusi Tepat Akupunktur</h2>
+                    <div class="author">
+                        <i class="fas fa-user-md"></i>
+                        <p>oleh: Dr. Hendrik Amd. Akup., Dokter & Ahli Akupunktur untuk Nyeri Pinggang dan Kebas Saraf</p>
+                    </div>
+                </div>
+                
+                <!-- First Image: Nyeri Punggung -->
+                <div class="article-image">
+                    <img src="LBP.jpg" alt="Ilustrasi Nyeri Punggung Bawah">
+                    <p class="image-caption">Nyeri punggung bawah (low back pain) dapat mengganggu aktivitas sehari-hari</p>
+                </div>
+                
+                <p>Nyeri punggung, khususnya di area pinggang (low back pain), adalah keluhan yang hampir universal. Data menunjukkan bahwa sekitar 80% orang dewasa pernah mengalaminya setidaknya sekali seumur hidup. Rasa sakit ini bisa datang tiba-tiba setelah mengangkat beban berat, muncul perlahan seiring waktu, atau bahkan menjadi teman kronis yang mengganggu produktivitas dan kualitas hidup. Namun, penting untuk diingat: nyeri punggung bukanlah diagnosis, melainkan gejala dari berbagai kemungkinan penyebab. Kabar baiknya, banyak dari penyebab ini dapat ditangani secara efektif dengan akupunktur yang tepat.</p>
+                
+                <h3><i class="fas fa-search"></i> Memahami Sumber Nyeri: Bukan Hanya "Salah Bantal"</h3>
+                <p>Nyeri punggung bisa bersumber dari berbagai struktur di kompleks tulang belakang:</p>
+                
+                <div class="highlight">
+                    <h4>Gangguan Otot dan Ligamen (Musculoskeletal):</h4>
+                    <p>Penyebab tersering. Meliputi ketegangan otot (muscle strain), ligamen terpelintir (sprain), kejang otot, atau titik pemicu nyeri (trigger points). Sering disebabkan oleh postur buruk, gerakan repetitif, atau aktivitas berlebihan.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h4>Masalah Sendi Facet dan Tulang Belakang:</h4>
+                    <p>Artritis (radang sendi) pada sendi facet, degenerasi diskus (penipisan bantalan antar tulang belakang), atau stenosis spinal (penyempitan kanal tulang belakang) yang menekan saraf.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h4>Saraf Terjepit (Herniasi Nukleus Pulposus/HNP):</h4>
+                    <p>Sering disebut "saraf kejepit". Terjadi ketika material lunak di dalam diskus menonjol dan menekan akar saraf, menyebabkan nyeri tajam yang sering menjalar ke tungkai (skiatika), disertai kesemutan atau kebas.</p>
+                </div>
+                
+                <div class="info-box">
+                    <h4>Kondisi Lain:</h4>
+                    <p>Faktor psikologis seperti stres dan kecemasan bisa memperberat ketegangan otot. Gangguan organ dalam (seperti ginjal) juga terkadang memancarkan nyeri ke area punggung.</p>
+                </div>
+                
+                <h3><i class="fas fa-acupuncture"></i> Akupunktur: Ilmu Kuno dengan Penjelasan Modern untuk Mengatasi Nyeri</h3>
+                <p>Akupunktur, sebagai bagian dari sistem pengobatan tradisional Tiongkok, memandang nyeri sebagai akibat dari ketidakseimbangan aliran energi (Qi) dan darah (Xue) dalam tubuh, atau adanya faktor patogen seperti angin, lembab, dan dingin yang menghambat meridian (jalur energi).</p>
+                
+                <!-- Dual Images -->
+                <div class="dual-images">
+                    <div>
+                        <img src="LBP.jpg" alt="Ilustrasi Nyeri Punggung">
+                        <p class="image-caption">Nyeri punggung dapat bervariasi dari ringan hingga berat</p>
+                    </div>
+                    <div>
+                        <img src="akup.jpg" alt="Terapi Akupunktur untuk Punggung">
+                        <p class="image-caption">Terapi akupunktur untuk nyeri punggung</p>
+                    </div>
+                </div>
+                
+                <p>Dalam perspektif medis kontemporer, efektivitas akupunktur untuk nyeri punggung telah didukung banyak penelitian. Stimulasi jarum akupunktur yang tepat dapat:</p>
+                
+                <ul>
+                    <li><strong>Merangsang Pelepasan Endorfin dan Neurotransmitter:</strong> Tubuh melepaskan zat pereda nyeri alami seperti endorfin, serotonin, dan norepinefrin.</li>
+                    <li><strong>Efek Anti-Inflamasi:</strong> Mengurangi produksi zat kimia pemicu peradangan di lokasi nyeri.</li>
+                    <li><strong>Relaksasi Otot:</strong> Melepaskan ketegangan dan kejang otot, meningkatkan sirkulasi darah lokal, dan mendorong penyembuhan jaringan.</li>
+                    <li><strong>Modulasi Sinyal Saraf:</strong> Menginterupsi sinyal nyeri yang dikirim ke otak (Teori Gerbang Nyeri/Melzack-Wall) dan menenangkan sistem saraf yang terlalu sensitif.</li>
+                    <li><strong>Meningkatkan Sirkulasi Darah:</strong> Membawa lebih banyak oksigen dan nutrisi untuk perbaikan jaringan.</li>
+                </ul>
+                
+                <div class="quote">
+                    <p>"Akupunktur yang Tepat": Kunci Kesembuhan</p>
+                </div>
+                
+                <p>Sebagai seorang dokter dan ahli akupunktur, saya menekankan pentingnya diagnosis yang akurat sebelum penusukan. Tidak semua nyeri punggung ditusuk dengan titik dan teknik yang sama. Prinsip "Akupunktur yang Tepat" meliputi:</p>
+                
+                <h3><i class="fas fa-clipboard-check"></i> Apa yang Dapat Diharapkan Pasien?</h3>
+                <p>Setelah sesi akupunktur, pasien sering melaporkan:</p>
+                
+                <div class="dual-images">
+                    <div class="info-box">
+                        <h4>Hasil Langsung:</h4>
+                        <ul>
+                            <li>Rasa nyeri yang berkurang secara signifikan</li>
+                            <li>Otot punggung yang terasa lebih rileks dan lentur</li>
+                            <li>Perbaikan dalam jangkauan gerak (range of motion)</li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h4>Hasil Jangka Panjang:</h4>
+                        <ul>
+                            <li>Penurunan gejala kebas atau kesemutan pada kaki (pada kasus saraf terjepit)</li>
+                            <li>Perasaan tenang dan tidur yang lebih nyenyak</li>
+                            <li>Pengurangan ketergantungan pada obat pereda nyeri</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p>Terapi akupunktur untuk nyeri punggung kronis biasanya membutuhkan beberapa sesi (sekitar 6-10 sesi) untuk hasil yang stabil dan optimal. Untuk kasus akut, responsnya bisa sangat cepat.</p>
+                
+                <h3><i class="fas fa-conclusion"></i> Kesimpulan</h3>
+                <p>Nyeri punggung adalah kondisi kompleks dengan banyak penyebab. Mengabaikannya atau hanya mengandalkan obat pereda nyeri bisa jadi hanya solusi sementara. Akupunktur menawarkan pendekatan terapi yang aman, minim efek samping, dan holistik, dengan memandang pasien secara utuh. Dengan diagnosis yang tepat dan teknik akupunktur yang terampil, akupunktur tidak hanya dapat meredakan gejala nyeri tetapi juga membantu mengembalikan keseimbangan tubuh, sehingga Anda dapat kembali beraktivitas dengan nyaman dan berkualitas.</p>
+                
+                <div class="highlight">
+                    <p><strong>Jangan biarkan nyeri punggung membatasi gerak dan hidup Anda. Konsultasikan keluhan Anda untuk mendapatkan penanganan yang tepat dan personal.</strong></p>
+                </div>
+                
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> Artikel ini ditujukan untuk tujuan informasi dan edukasi. Konsultasikan dengan dokter atau ahli akupunktur terpercaya untuk diagnosis dan penanganan masalah kesehatan Anda secara individual.</p>
+                </div>
+            </article>
+            
+            <!-- Sidebar -->
+            <aside>
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-user-md"></i> Profil Dokter</h3>
+                    <div class="info-box">
+                        <h4>Dr. Hendrik Amd. Akup.</h4>
+                        <p>Dokter & Ahli Akupunktur dengan spesialisasi nyeri pinggang dan gangguan saraf. Berpengalaman lebih dari 10 tahun menangani kasus nyeri muskuloskeletal dengan pendekatan integratif.</p>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Informasi Praktik</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-clock"></i> Senin - Jumat: 17.30 - 21.00</li>
+                        <li><i class="fas fa-clock"></i> Sabtu: 08.00 - 12.00</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Sosro No. 104 , medan</li>
+                        <li><i class="fas fa-phone"></i> (021) 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> IG @hendrikkho</li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-hand-point-right"></i> Keunggulan Akupunktur</h3>
+                    <div class="info-box">
+                        <h4>Aman & Alami</h4>
+                        <p>Minim efek samping karena menggunakan jarum steril sekali pakai dan merangsang kemampuan penyembuhan alami tubuh.</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h4>Terbukti Ilmiah</h4>
+                        <p>Efektivitas akupunktur untuk nyeri punggung didukung oleh penelitian medis modern.</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h4>Pendekatan Holistik</h4>
+                        <p>Menangani akar masalah, bukan hanya gejala, dengan mempertimbangkan kondisi fisik dan emosional pasien.</p>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-calendar-check"></i> Konsultasi Online</h3>
+                    <p>Untuk kenyamanan Anda, konsultasi pendahuluan dapat dilakukan secara online melalui video call. Hubungi kami untuk informasi lebih lanjut.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Klinik Akupunktur dr. Hendrik. All rights reserved.</p>
+                </div>
+                <div class="footer-link">
+                    <a href="https://hendrikkho-akupuntur.github.io/profile/profile%20dr%20Hendrik%20akupuntur.html" class="profile-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Kunjungi Profil Lengkap Dr. Hendrik
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple script to handle image loading errors
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            
+            images.forEach(img => {
+                img.onerror = function() {
+                    // If image fails to load, show a placeholder
+                    this.src = 'https://via.placeholder.com/800x400/1a5276/FFFFFF?text=Nyeri+Punggung+dan+Akupunktur';
+                    this.alt = 'Gambar tidak tersedia - placeholder';
+                };
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
