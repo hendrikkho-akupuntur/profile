@@ -138,6 +138,36 @@
             cursor: pointer;
             color: var(--primary);
         }
+
+        /* Google Maps Button Style */
+        .map-button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .map-button:hover {
+            background-color: #3367D6;
+        }
+        
+        .address-card {
+            background-color: #f0f8f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid var(--primary);
+        }
         
         /* Hero Section */
         .hero {
@@ -170,7 +200,7 @@
         
         .hero-text p {
             font-size: 1.1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             color: var(--gray);
         }
         
@@ -387,6 +417,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            flex-wrap: wrap;
         }
         
         .copyright {
@@ -395,6 +426,19 @@
             border-top: 1px solid #444;
             color: #aaa;
             font-size: 0.9rem;
+        }
+
+        .location-link {
+            color: var(--secondary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: 5px;
+        }
+        
+        .location-link:hover {
+            text-decoration: underline;
         }
         
         /* Responsive Design */
@@ -469,7 +513,8 @@
                     <h1>Atasi <span>Nyeri dan Kebas</span> dengan Akupunktur yang Tepat</h1>
                     <p>Saya Dr. Hendrik Amd, Akup, dokter dan ahli akupunktur dengan pengalaman lebih dari 9 tahun membantu pasien di Medan, Sumatera Utara untuk mengatasi masalah nyeri dan kebas dengan gabungan ilmu Akupunktur dan Medis Modern.</p>
                     <p>Dengan pendekatan holistik dan teknik akupunktur terkini, saya telah membantu ratusan pasien mendapatkan kembali kualitas hidup mereka.</p>
-                    <a href="#kontak" class="cta-button">Buat Janji Konsultasi</a>
+                                        
+                    <a href="#kontak" class="cta-button" style="margin-top: 15px;">Buat Janji Konsultasi</a>
                 </div>
                 <div class="hero-image">
                     <img src="1.jpg" alt="Dr. Hendrik Amd, Akup - Ahli Akupunktur">
@@ -545,6 +590,16 @@
         <div class="container">
             <h2>Konsultasikan Masalah Nyeri dan Kebas Anda</h2>
             <p>Jangan biarkan nyeri dan kebas mengganggu aktivitas harian Anda. Dapatkan penanganan yang tepat dan aman dengan akupunktur. Hubungi saya untuk konsultasi dan perawatan di Medan, Sumatera Utara.</p>
+            
+            <!-- Alamat lengkap di CTA Section dengan Google Maps -->
+            <div style="background-color: rgba(255,255,255,0.15); padding: 20px; border-radius: 15px; max-width: 500px; margin: 0 auto 30px;">
+                <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt"></i> <strong>Lokasi Praktek:</strong></p>
+                <p style="font-size: 1.1rem;">Jalan Sosro No. 104B, Medan, Sumatera Utara</p>
+                <a href="https://maps.app.goo.gl/4UMiWa5zUnheEuJPA" target="_blank" style="color: white; display: inline-flex; align-items: center; gap: 5px; margin-top: 10px; text-decoration: underline;">
+                    <i class="fab fa-google"></i> Lihat Peta & Petunjuk Arah
+                </a>
+            </div>
+            
             <a href="https://wa.me/6285270410537" class="cta-button-light" target="_blank"><i class="fab fa-whatsapp"></i> Hubungi via WhatsApp</a>
             <p style="margin-top: 20px;">Atau telepon: <strong>0852-7041-0537</strong></p>
         </div>
@@ -572,7 +627,11 @@
                 
                 <div class="footer-contact">
                     <h4>Kontak & Lokasi</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Jalan Sosro 104B, Medan, Sumatera Utara</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jalan Sosro No. 104B, Medan, Sumatera Utara 
+                        <a href="https://maps.app.goo.gl/4UMiWa5zUnheEuJPA" target="_blank" class="location-link">
+                            <i class="fas fa-external-link-alt"></i> Maps
+                        </a>
+                    </p>
                     <p><i class="fas fa-phone"></i> 0852-7041-0537</p>
                     <p><i class="fas fa-clock"></i> Senin - Jumat: 17:30 - 21:00 WIB</p>
                 </div>
