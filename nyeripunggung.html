@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyeri Punggung: Solusi Akupunktur oleh Dr. Hendrik</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -25,7 +25,7 @@
             padding: 0 20px;
         }
         
-        /* Header Styles - Hijau */
+        /* Header Styles */
         header {
             background: linear-gradient(to right, #1a5c1a, #2e8b57);
             color: white;
@@ -37,6 +37,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         
         .logo {
@@ -60,6 +62,17 @@
             opacity: 0.9;
         }
         
+        .header-contact p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+        }
+        
+        .header-contact i {
+            color: #a3e4a3;
+        }
+        
         /* Main Content */
         .main-content {
             display: grid;
@@ -71,6 +84,15 @@
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.2rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
             }
         }
         
@@ -94,19 +116,26 @@
             margin-bottom: 10px;
         }
         
+        @media (max-width: 480px) {
+            .article-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
         .author {
             display: flex;
             align-items: center;
             gap: 10px;
             color: #5d7e5d;
             font-style: italic;
+            flex-wrap: wrap;
         }
         
         .author i {
             color: #2e8b57;
         }
         
-        /* Image Styles - Single Image */
+        /* Image Styles */
         .article-image {
             margin: 35px 0;
             text-align: center;
@@ -119,6 +148,7 @@
             box-shadow: 0 6px 15px rgba(46, 139, 87, 0.25);
             transition: transform 0.3s ease;
             border: 1px solid #d0e8d0;
+            background-color: #f0f9f0;
         }
         
         .article-image img:hover {
@@ -135,12 +165,24 @@
             margin-right: auto;
         }
         
-        /* Content Sections - Hijau */
+        /* Content Sections */
         h3 {
             color: #1a5c1a;
             margin: 25px 0 15px;
             padding-bottom: 8px;
             border-bottom: 1px dashed #c2e0c2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h3 i {
+            color: #2e8b57;
+        }
+        
+        h4 {
+            color: #1a5c1a;
+            margin-bottom: 8px;
         }
         
         p {
@@ -174,6 +216,127 @@
             border-left: 4px solid #9acd32;
         }
         
+        .green-accent {
+            color: #2e8b57;
+        }
+        
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0 5px;
+        }
+        
+        .tag {
+            background-color: #e8f5e8;
+            color: #2e8b57;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            background-color: #f0f9f0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 3px solid #2e8b57;
+            transition: transform 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #2e8b57;
+            color: white;
+            border-radius: 50%;
+            line-height: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .step h4 {
+            font-size: 0.95rem;
+        }
+        
+        .step p {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        
+        /* Results Grid */
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        @media (max-width: 480px) {
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .result-box {
+            background-color: #f8fcf8;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #2e8b57;
+        }
+        
+        .result-box h4 {
+            color: #1a5c1a;
+            margin-bottom: 8px;
+        }
+        
+        .result-box ul {
+            margin-left: 15px;
+        }
+        
+        .single-image-focus {
+            text-align: center;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f9fdf9;
+            border-radius: 10px;
+            border: 1px solid #e0f0e0;
+        }
+        
+        .single-image-focus h4 {
+            color: #1a5c1a;
+            margin-bottom: 15px;
+        }
+        
+        /* Info Box */
+        .info-box {
+            background-color: #f8fcf8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 3px solid #2e8b57;
+        }
+        
+        .info-box h4 {
+            color: #1a5c1a;
+            margin-bottom: 8px;
+        }
+        
         /* Sidebar */
         aside {
             background-color: white;
@@ -194,23 +357,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            border-bottom: 1px dashed #c2e0c2;
+            padding-bottom: 8px;
         }
         
         .sidebar-section h3 i {
             color: #2e8b57;
-        }
-        
-        .info-box {
-            background-color: #f8fcf8;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            border-left: 3px solid #2e8b57;
-        }
-        
-        .info-box h4 {
-            color: #1a5c1a;
-            margin-bottom: 8px;
         }
         
         .contact-info {
@@ -230,7 +382,31 @@
             width: 20px;
         }
         
-        /* Footer - Hijau */
+        /* Buttons */
+        .green-button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .green-button:hover {
+            background-color: #1a5c1a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
         footer {
             background-color: #1a5c1a;
             color: white;
@@ -242,12 +418,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
         
         @media (max-width: 768px) {
             .footer-content {
                 flex-direction: column;
-                gap: 20px;
                 text-align: center;
             }
         }
@@ -266,9 +443,9 @@
         }
         
         .profile-link:hover {
-            background-color: #1a5c1a;
+            background-color: #3ca86b;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         .copyright {
@@ -286,97 +463,65 @@
             border-left: 4px solid #9acd32;
         }
         
-        /* Additional Green Elements */
-        .green-accent {
-            color: #2e8b57;
+        /* Animasi Fade In */
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
         }
         
-        .green-button {
-            background-color: #2e8b57;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background-color 0.3s;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
-        .green-button:hover {
-            background-color: #1a5c1a;
-        }
-        
-        /* Header Contact */
-        .header-contact p {
+        /* Placeholder Gambar SVG */
+        .image-placeholder {
             display: flex;
             align-items: center;
-            gap: 8px;
-        }
-        
-        .header-contact i {
-            color: #a3e4a3;
-        }
-        
-        /* Tags */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        
-        .tag {
-            background-color: #e8f5e8;
-            color: #2e8b57;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-        
-        /* Treatment Process */
-        .process-steps {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .step {
-            flex: 1;
-            min-width: 200px;
-            background-color: #f0f9f0;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            border-top: 3px solid #2e8b57;
-        }
-        
-        .step-number {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: #2e8b57;
-            color: white;
-            border-radius: 50%;
-            line-height: 30px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        /* Single Image Focus */
-        .single-image-focus {
-            text-align: center;
-            margin: 30px 0;
-            padding: 15px;
-            background-color: #f9fdf9;
+            justify-content: center;
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
             border-radius: 10px;
-            border: 1px solid #e0f0e0;
+            padding: 40px;
+            color: #1a5c1a;
+            font-size: 1.1rem;
+            min-height: 250px;
+            border: 2px dashed #2e8b57;
         }
         
-        .single-image-focus h4 {
-            color: #1a5c1a;
-            margin-bottom: 15px;
+        .image-placeholder i {
+            font-size: 3rem;
+            margin-right: 15px;
+            opacity: 0.7;
+        }
+        
+        /* WhatsApp Button di Sidebar */
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #1da851;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
         }
     </style>
 </head>
@@ -391,7 +536,7 @@
                     </div>
                     <div class="logo-text">
                         <h1>Klinik Akupunktur dr. Hendrik</h1>
-                        <p>Spesialis Nyeri Pinggang & Kebas Saraf</p>
+                        <p>Spesialis Nyeri Pinggang &amp; Kebas Saraf</p>
                     </div>
                 </div>
                 <div class="header-contact">
@@ -410,7 +555,7 @@
                     <h2>Nyeri Punggung: Masalah Umum dengan Solusi Tepat Akupunktur</h2>
                     <div class="author">
                         <i class="fas fa-user-md"></i>
-                        <p>oleh: Dr. Hendrik Amd. Akup., Dokter & Ahli Akupunktur untuk Nyeri Pinggang dan Kebas Saraf</p>
+                        <p>oleh: Dr. Hendrik Amd. Akup., Dokter &amp; Ahli Akupunktur untuk Nyeri Pinggang dan Kebas Saraf</p>
                     </div>
                     <div class="tags">
                         <span class="tag">Nyeri Punggung</span>
@@ -427,31 +572,35 @@
                 <p>Nyeri punggung bisa bersumber dari berbagai struktur di kompleks tulang belakang:</p>
                 
                 <div class="highlight">
-                    <h4>Gangguan Otot dan Ligamen (Musculoskeletal):</h4>
+                    <h4>Gangguan Otot dan Ligamen (Musculoskeletal)</h4>
                     <p>Penyebab tersering. Meliputi ketegangan otot (muscle strain), ligamen terpelintir (sprain), kejang otot, atau titik pemicu nyeri (trigger points). Sering disebabkan oleh postur buruk, gerakan repetitif, atau aktivitas berlebihan.</p>
                 </div>
                 
                 <div class="info-box">
-                    <h4>Masalah Sendi Facet dan Tulang Belakang:</h4>
+                    <h4>Masalah Sendi Facet dan Tulang Belakang</h4>
                     <p>Artritis (radang sendi) pada sendi facet, degenerasi diskus (penipisan bantalan antar tulang belakang), atau stenosis spinal (penyempitan kanal tulang belakang) yang menekan saraf.</p>
                 </div>
                 
                 <div class="info-box">
-                    <h4>Saraf Terjepit (Herniasi Nukleus Pulposus/HNP):</h4>
+                    <h4>Saraf Terjepit (Herniasi Nukleus Pulposus/HNP)</h4>
                     <p>Sering disebut "saraf kejepit". Terjadi ketika material lunak di dalam diskus menonjol dan menekan akar saraf, menyebabkan nyeri tajam yang sering menjalar ke tungkai (skiatika), disertai kesemutan atau kebas.</p>
                 </div>
                 
                 <div class="info-box">
-                    <h4>Kondisi Lain:</h4>
-                    <p>Faktor psikologis seperti stres dan kecemasan bisa memperberat ketegangan otot. Gangguan organ dalam (seperti ginjal) juga terkadir memancarkan nyeri ke area punggung.</p>
+                    <h4>Kondisi Lain</h4>
+                    <p>Faktor psikologis seperti stres dan kecemasan bisa memperberat ketegangan otot. Gangguan organ dalam (seperti ginjal) juga terkadang memancarkan nyeri ke area punggung.</p>
                 </div>
                 
                 <h3><i class="fas fa-acupuncture"></i> Akupunktur: Ilmu Kuno dengan Penjelasan Modern untuk Mengatasi Nyeri</h3>
                 <p>Akupunktur, sebagai bagian dari sistem pengobatan tradisional Tiongkok, memandang nyeri sebagai akibat dari ketidakseimbangan aliran energi (Qi) dan darah (Xue) dalam tubuh, atau adanya faktor patogen seperti angin, lembab, dan dingin yang menghambat meridian (jalur energi).</p>
                 
-                <!-- Single Image - Akup.jpg -->
+                <!-- Gambar dengan fallback yang lebih baik -->
                 <div class="article-image">
-                    <img src="akup.jpg" alt="Terapi Akupunktur untuk Nyeri Punggung">
+                    <img 
+                        src="akup.jpg" 
+                        alt="Terapi Akupunktur untuk Nyeri Punggung"
+                        onerror="this.onerror=null; this.parentElement.innerHTML = '<div class=\'image-placeholder\'><i class=\'fas fa-leaf\'></i><div><strong>Gambar Ilustrasi Akupunktur</strong><br>Terapi akupunktur untuk mengatasi nyeri punggung - Pendekatan holistik yang tepat sasaran</div></div>';"
+                    >
                     <p class="image-caption">Terapi akupunktur untuk mengatasi nyeri punggung - Pendekatan holistik yang tepat sasaran</p>
                 </div>
                 
@@ -472,22 +621,22 @@
                 <h3><i class="fas fa-clipboard-check"></i> Proses Terapi Akupunktur</h3>
                 
                 <div class="process-steps">
-                    <div class="step">
+                    <div class="step fade-in">
                         <div class="step-number">1</div>
-                        <h4>Konsultasi & Diagnosis</h4>
+                        <h4>Konsultasi &amp; Diagnosis</h4>
                         <p>Pemeriksaan menyeluruh untuk identifikasi penyebab nyeri</p>
                     </div>
-                    <div class="step">
+                    <div class="step fade-in">
                         <div class="step-number">2</div>
                         <h4>Penentuan Titik Akupunktur</h4>
                         <p>Pemilihan titik sesuai kondisi individual pasien</p>
                     </div>
-                    <div class="step">
+                    <div class="step fade-in">
                         <div class="step-number">3</div>
                         <h4>Sesi Akupunktur</h4>
                         <p>Penusukan dengan teknik tepat dan steril</p>
                     </div>
-                    <div class="step">
+                    <div class="step fade-in">
                         <div class="step-number">4</div>
                         <h4>Evaluasi Hasil</h4>
                         <p>Pemantauan perkembangan dan penyesuaian terapi</p>
@@ -499,18 +648,18 @@
                 
                 <div class="single-image-focus">
                     <h4>Hasil yang Dirasakan Pasien</h4>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
-                        <div class="info-box" style="margin: 0;">
-                            <h4>Hasil Langsung:</h4>
-                            <ul style="margin-left: 15px;">
+                    <div class="results-grid">
+                        <div class="result-box">
+                            <h4><i class="fas fa-bolt green-accent"></i> Hasil Langsung:</h4>
+                            <ul>
                                 <li>Rasa nyeri berkurang</li>
                                 <li>Otot lebih rileks</li>
                                 <li>Gerak lebih leluasa</li>
                             </ul>
                         </div>
-                        <div class="info-box" style="margin: 0;">
-                            <h4>Hasil Jangka Panjang:</h4>
-                            <ul style="margin-left: 15px;">
+                        <div class="result-box">
+                            <h4><i class="fas fa-clock green-accent"></i> Hasil Jangka Panjang:</h4>
+                            <ul>
                                 <li>Kebas/kesemutan berkurang</li>
                                 <li>Tidur lebih nyenyak</li>
                                 <li>Ketergantungan obat menurun</li>
@@ -539,7 +688,7 @@
                     <h3><i class="fas fa-user-md"></i> Profil Dokter</h3>
                     <div class="info-box">
                         <h4>Dr. Hendrik Amd. Akup.</h4>
-                        <p>Dokter & Ahli Akupunktur dengan spesialisasi nyeri pinggang dan gangguan saraf. Berpengalaman lebih dari 10 tahun menangani kasus nyeri muskuloskeletal dengan pendekatan integratif.</p>
+                        <p>Dokter &amp; Ahli Akupunktur dengan spesialisasi nyeri pinggang dan gangguan saraf. Berpengalaman lebih dari 10 tahun menangani kasus nyeri muskuloskeletal dengan pendekatan integratif.</p>
                         <p><strong>Spesialisasi:</strong> Nyeri Pinggang, Saraf Terjepit, Akupunktur Medis</p>
                     </div>
                 </div>
@@ -551,15 +700,14 @@
                         <li><i class="fas fa-clock"></i> Sabtu minggu: sesuai Janji</li>
                         <li><i class="fas fa-map-marker-alt"></i> Jl. Sosro No. 104B, Medan</li>
                         <li><i class="fas fa-phone"></i> 0852-7041-0537</li>
-                        <li><i class="fas fa-envelope"></i> IG@hendrikkho</li>
-                        
+                        <li><i class="fab fa-instagram"></i> @hendrikkho</li>
                     </ul>
                 </div>
                 
                 <div class="sidebar-section">
                     <h3><i class="fas fa-hand-point-right"></i> Keunggulan Akupunktur</h3>
                     <div class="info-box">
-                        <h4><i class="fas fa-shield-alt"></i> Aman & Alami</h4>
+                        <h4><i class="fas fa-shield-alt"></i> Aman &amp; Alami</h4>
                         <p>Minim efek samping karena menggunakan jarum steril sekali pakai dan merangsang kemampuan penyembuhan alami tubuh.</p>
                     </div>
                     
@@ -577,9 +725,11 @@
                 <div class="sidebar-section">
                     <h3><i class="fas fa-calendar-check"></i> Konsultasi Online</h3>
                     <p>Untuk kenyamanan Anda, konsultasi pendahuluan dapat dilakukan secara online melalui video call. Hubungi kami untuk informasi lebih lanjut.</p>
-                    <button class="green-button" style="margin-top: 10px; width: 100%;">
-                        <i class="fas fa-video"></i> Buat Janji Konsultasi
-                    </button>
+                    <a href="https://wa.me/6285270410537?text=Halo%20Dok%2C%20saya%20ingin%20konsultasi%20tentang%20nyeri%20punggung" 
+                       target="_blank" 
+                       class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
+                    </a>
                 </div>
                 
                 <div class="sidebar-section">
@@ -620,27 +770,23 @@
     </footer>
     
     <script>
-        // Simple script to handle image loading errors
         document.addEventListener('DOMContentLoaded', function() {
-            const mainImage = document.querySelector('.article-image img');
-            
-            mainImage.onerror = function() {
-                // If image fails to load, show a placeholder
-                this.src = 'https://via.placeholder.com/800x450/1a5c1a/FFFFFF?text=Akupunktur+untuk+Nyeri+Punggung';
-                this.alt = 'Gambar tidak tersedia - ilustrasi akupunktur untuk nyeri punggung';
-            };
-            
-            // Button click simulation
-            document.querySelector('.green-button').addEventListener('click', function() {
-                alert('Untuk membuat janji konsultasi, silakan hubungi 0852-7041-0537 atau email info@drhendrik-akupunktur.com');
-            });
-            
-            // Add subtle animation to process steps
+            // Animasi fade-in untuk steps
             const steps = document.querySelectorAll('.step');
             steps.forEach((step, index) => {
-                step.style.animationDelay = `${index * 0.1}s`;
-                step.classList.add('fade-in');
+                step.style.animationDelay = (index * 0.15) + 's';
             });
+            
+            // Link WhatsApp di sidebar
+            const waButton = document.querySelector('.whatsapp-button');
+            if (waButton) {
+                waButton.addEventListener('click', function(e) {
+                    // Event sudah handle oleh href langsung
+                    console.log('WhatsApp button clicked');
+                });
+            }
+            
+            console.log('Halaman berhasil dimuat!');
         });
     </script>
 </body>
